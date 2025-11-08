@@ -1,0 +1,182 @@
+# ===========================================================
+# 🧩  SHK Software Vergleich – AI-Ready Replit-Projekt (🇩🇪)
+# ===========================================================
+# Dieses Skript generiert eine komplette AI-optimierte Content-Basis
+# für eine Vergleichsseite zu SHK-Software (Sanitär, Heizung, Klima).
+# ===========================================================
+
+import os, json, yaml, zipfile, textwrap
+
+folders = ["prompts", "content", "schema"]
+for f in folders:
+    os.makedirs(f, exist_ok=True)
+
+# -----------------------
+# 🧱 1. System Prompt
+# -----------------------
+system_prompt = textwrap.dedent("""
+system_prompt: |
+  Du bist ein professioneller AI-Content-Generator für eine Vergleichsseite zu SHK-Software
+  (Sanitär, Heizung, Klima). Dein Ziel: Erstelle hochwertige, faktenbasierte,
+  AI-search-optimierte Texte mit klarer Struktur, Schema.org-Markup und FAQs.
+
+  Regeln:
+    - Schreibe informativ, neutral, praxisorientiert.
+    - Bediene vier Intentionstypen:
+        • Informational – Wissen & Verständnis
+        • Comparative – Vergleich & Entscheidung
+        • Transactional – Demo, Test, Anbieterwahl
+        • Problem-Solving – Integration, Migration, Einrichtung
+    - Verwende Field-Labels:
+        ["cloud", "mobile", "zeit", "crm", "lager", "ds-gvo", "wartung"]
+    - Nutze JSON-LD oder Markdown-Struktur im Output.
+    - Füge pro Abschnitt 2–3 FAQ-Fragen hinzu.
+    - Stil: klar, handwerksnah, AI-grounded.
+""").strip()
+open("prompts/system_prompt.yaml","w").write(system_prompt)
+
+# -----------------------
+# 🧭 2. Intent Taxonomy
+# -----------------------
+taxonomy = {
+  "Informational": ["Was ist", "Wie funktioniert", "Warum"],
+  "Comparative": ["Welche ist besser", "Vergleich", "Unterschied"],
+  "Transactional": ["Jetzt testen", "Demo anfordern", "Kontakt aufnehmen"],
+  "Problem-Solving": ["Wie integriere ich", "Wie migriere ich", "Wie behebe ich"]
+}
+json.dump(taxonomy, open("prompts/taxonomy_intents.json","w"), indent=2, ensure_ascii=False)
+
+# -----------------------
+# 🧩 3. Grounding Queries
+# -----------------------
+queries = textwrap.dedent("""
+queries:
+  - "beste SHK Software 2025 Cloud DSGVO"
+  - "SHK Handwerkersoftware Vergleich mobil"
+  - "Wartungssoftware Sanitär Heizung"
+  - "SHK Software Schnittstellen DATEV DATANORM"
+  - "Kostenmodelle SHK SaaS vs Lizenz"
+  - "Cloud vs On-Premise SHK Software"
+  - "SHK Software mit mobiler App Zeiterfassung"
+  - "Erfahrungen Labelwin vs PDS"
+  - "Digitale Wartungsplanung SHK 2025"
+  - "Trends Handwerkersoftware Heizungsbau"
+""").strip()
+open("prompts/grounding_queries.yaml","w").write(queries)
+
+# -----------------------
+# 💬 4. FAQ Snippets
+# -----------------------
+faq = [
+  {"topic": "Cloud", "question": "Ist Cloud-Software im Handwerk sicher?", 
+   "answer": "Ja, wenn sie DSGVO-konform betrieben wird und Serverstandorte in Deutschland hat."},
+  {"topic": "Mobile", "question": "Kann ich Zeiterfassung offline nutzen?", 
+   "answer": "Ja, viele mobile Apps synchronisieren Daten später automatisch."},
+  {"topic": "Wartung", "question": "Wie automatisiere ich Wartungsverträge?", 
+   "answer": "Über digitale Wartungszyklen und Terminvorlagen im Wartungsmodul."}
+]
+json.dump(faq, open("prompts/faq_snippets.json","w"), indent=2, ensure_ascii=False)
+
+# -----------------------
+# 📚 5. Content Cluster (Markdown)
+# -----------------------
+content_templates = {
+  "mobile-zeiterfassung": "# Beste SHK-Software mit mobiler Zeiterfassung\n\nMonteure im Außendienst benötigen Echtzeit-Zugriff...",
+  "cloud-vs-onprem": "# Cloud vs. On-Premise: Welche Lösung passt für SHK-Betriebe?\n\nCloudlösungen bieten Flexibilität...",
+  "funktionen": "# Funktionen moderner SHK-Software\n\nVon Angebotswesen bis Lagerverwaltung...",
+  "preismodelle": "# Preismodelle & Lizenzarten\n\nVergleich SaaS, Mietmodell und Kaufsoftware...",
+  "einfuehrung": "# In 6 Schritten zur erfolgreichen Einführung einer SHK-Software\n\nAnalyse, Migration, Schulung...",
+  "kleine-betriebe": "# SHK-Software für kleine Betriebe (1–5 MA)\n\nLeichte Bedienung, günstige Cloudmodelle...",
+  "schnittstellen": "# Wichtige Schnittstellen (DATEV, DATANORM, IDS)\n\nWarum Integrationen Zeit sparen...",
+  "wartung-digital": "# Wartung und Serviceaufträge digitalisieren\n\nAutomatische Terminplanung und Kundendokumentation...",
+  "trends-2025": "# Trends 2025: KI und Automatisierung im SHK-Handwerk\n\nVon Smart Home bis Predictive Maintenance...",
+  "effizienz": "# Erfolg messen: Zeitersparnis und ROI durch Digitalisierung\n\nKennzahlen für Effizienz im SHK-Betrieb..."
+}
+for name, text in content_templates.items():
+    open(f"content/{name}.md","w").write(text)
+
+# -----------------------
+# 📄 6. Schema.org Dateien
+# -----------------------
+schemas = {
+  "schema_softwareapplication.json": {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "applicationCategory":"Handwerkersoftware",
+    "featureList":["Mobile App","Cloud","Wartungsmodul","Zeiterfassung"],
+    "offers":{"@type":"Offer","price":"ab 39 EUR / Monat","priceCurrency":"EUR"},
+    "provider":{"@type":"Organization","name":"PDS GmbH","url":"https://pds.de"}
+  },
+  "schema_product.json": {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"SHK Handwerkersoftware Labelwin",
+    "brand":"M-SOFT",
+    "category":"Handwerkersoftware",
+    "offers":{"@type":"Offer","price":"999","priceCurrency":"EUR"}
+  },
+  "schema_webpage.json": {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Cloud vs. On-Premise SHK Software Vergleich",
+    "about":["Cloud Software","On Premise Installation","SHK Handwerk"]
+  },
+  "schema_dataset.json": {
+    "@context":"https://schema.org",
+    "@type":"Dataset",
+    "name":"SHK Software Vergleichsdaten 2025",
+    "creator":{"@type":"Organization","name":"SHK-Software-Vergleich.de"}
+  }
+}
+for name, data in schemas.items():
+    json.dump(data, open(f"schema/{name}","w"), indent=2, ensure_ascii=False)
+
+# -----------------------
+# 🧾 7. SEO Template
+# -----------------------
+seo_templates = textwrap.dedent("""
+meta:
+  title: "Vergleich SHK-Software 2025 | Sanitär • Heizung • Klima"
+  description: "Die besten Handwerkersoftware-Lösungen im SHK-Bereich – inkl. Cloud, mobile App, Preise und Schnittstellen-Vergleich."
+  keywords: ["SHK Software", "Handwerkersoftware", "Vergleich", "Cloud", "Mobile App", "Zeiterfassung", "Wartung"]
+  author: "SHK-Software-Vergleich.de"
+""").strip()
+open("prompts/seo_templates.yaml","w").write(seo_templates)
+
+# -----------------------
+# 🧭 8. README
+# -----------------------
+readme = textwrap.dedent("""
+# SHK Software Vergleich – Replit Prompt Bundle 🇩🇪
+
+Dieses Bundle erstellt automatisch AI-optimierte Inhalte, Prompts und Schema.org-Strukturen
+für eine Vergleichsseite zu SHK-Software (Sanitär, Heizung, Klima).
+
+## Nutzung:
+1️⃣ Füge diesen Code in Replit.ai ein  
+2️⃣ Nach Ausführung erscheint: `shk_software_replit_bundle.zip`  
+3️⃣ Lade es herunter oder arbeite direkt mit den generierten Dateien  
+
+## Start-Prompts:
+- `generate_section("funktionen")`
+- `generate_section("wartung-digital")`
+- `compare_intents("Cloud vs On-Premise")`
+
+## Struktur:
+- `/prompts/` → System, SEO, Taxonomie
+- `/content/` → Markdown-Content (10 Themen)
+- `/schema/` → JSON-LD Schemadaten
+""").strip()
+open("README.md","w").write(readme)
+
+# -----------------------
+# 📦 9. ZIP erstellen
+# -----------------------
+with zipfile.ZipFile("shk_software_replit_bundle.zip","w") as z:
+    for root, _, files in os.walk("."):
+        for f in files:
+            if f.endswith((".md",".yaml",".json")):
+                z.write(os.path.join(root,f))
+
+print("✅ Komplettes Bundle erstellt: shk_software_replit_bundle.zip")
+print("💡 Download oder sofortige Nutzung in Replit möglich.")
