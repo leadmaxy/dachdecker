@@ -1,11 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import EnhancedHero from "@/components/EnhancedHero";
 import SoftwareCard from "@/components/SoftwareCard";
 import ContentTopicCard from "@/components/ContentTopicCard";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import FeatureGrid from "@/components/FeatureGrid";
+import IllustratedFeatureGrid from "@/components/IllustratedFeatureGrid";
+import VisualCategorySection from "@/components/VisualCategorySection";
 import { faqData } from "@shared/schema";
 import {
   Cloud,
@@ -14,10 +15,6 @@ import {
   TrendingUp,
   Users,
   Wrench,
-  Clock,
-  Database,
-  Shield,
-  Zap
 } from "lucide-react";
 
 export default function Home() {
@@ -96,34 +93,65 @@ export default function Home() {
 
   const features = [
     {
-      icon: Cloud,
+      icon: "cloud" as const,
       title: "Cloud-basiert",
       description: "Zugriff von überall, automatische Updates und sichere Datenhaltung in deutschen Rechenzentren."
     },
     {
-      icon: Smartphone,
+      icon: "mobile" as const,
       title: "Mobile App",
       description: "Zeiterfassung und Auftragsabwicklung direkt vom Smartphone, auch offline nutzbar."
     },
     {
-      icon: Settings,
+      icon: "integration" as const,
       title: "Schnittstellen",
       description: "Integration mit DATEV, DATANORM und weiteren branchenüblichen Systemen."
     },
     {
-      icon: Clock,
+      icon: "time" as const,
       title: "Zeiterfassung",
       description: "Erfassen Sie Arbeitszeiten projektbezogen und optimieren Sie Ihre Kalkulation."
     },
     {
-      icon: Database,
-      title: "Lagerverwaltung",
-      description: "Behalten Sie den Überblick über Material und optimieren Sie Ihre Lagerhaltung."
+      icon: "maintenance" as const,
+      title: "Wartungsmodul",
+      description: "Digitale Wartungsplanung mit automatischen Erinnerungen und Terminvorlagen."
     },
     {
-      icon: Shield,
+      icon: "default" as const,
       title: "DSGVO-konform",
       description: "Erfüllt alle deutschen Datenschutzanforderungen mit Serverstandort Deutschland."
+    }
+  ];
+
+  const visualCategories = [
+    {
+      id: "cloud",
+      title: "Cloud-Lösungen",
+      description: "Flexible Software mit Zugriff von überall",
+      icon: "cloud" as const,
+      badge: "Beliebt"
+    },
+    {
+      id: "mobile",
+      title: "Mobile Apps",
+      description: "Zeiterfassung für unterwegs",
+      icon: "mobile" as const,
+      badge: "Praktisch"
+    },
+    {
+      id: "integration",
+      title: "Schnittstellen",
+      description: "DATEV, DATANORM & mehr",
+      icon: "integration" as const,
+      badge: "Wichtig"
+    },
+    {
+      id: "wartung",
+      title: "Wartung",
+      description: "Digitale Serviceplanung",
+      icon: "maintenance" as const,
+      badge: "Neu"
     }
   ];
 
@@ -132,7 +160,7 @@ export default function Home() {
       <Header />
       
       <main className="flex-1">
-        <Hero />
+        <EnhancedHero />
 
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
@@ -148,7 +176,13 @@ export default function Home() {
           </div>
         </section>
 
-        <FeatureGrid title="Funktionen moderner SHK-Software" features={features} />
+        <VisualCategorySection 
+          title="Software nach Kategorien entdecken"
+          subtitle="Finden Sie die perfekte Lösung für Ihre spezifischen Anforderungen"
+          categories={visualCategories}
+        />
+
+        <IllustratedFeatureGrid title="Funktionen moderner SHK-Software" features={features} />
 
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
