@@ -6,6 +6,16 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Vergleich from "@/pages/Vergleich";
 import FAQ from "@/pages/FAQ";
+import Funktionen from "@/pages/Funktionen";
+import Preise from "@/pages/Preise";
+import Cloud from "@/pages/Cloud";
+import Mobile from "@/pages/Mobile";
+import Wartung from "@/pages/Wartung";
+import KleineBetriebe from "@/pages/KleineBetriebe";
+import Datenschutz from "@/pages/Datenschutz";
+import Impressum from "@/pages/Impressum";
+import Kontakt from "@/pages/Kontakt";
+import Thema from "@/pages/Thema";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -14,6 +24,17 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/vergleich" component={Vergleich} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/funktionen" component={Funktionen} />
+      <Route path="/preise" component={Preise} />
+      <Route path="/cloud" component={Cloud} />
+      <Route path="/mobile" component={Mobile} />
+      <Route path="/wartung" component={Wartung} />
+      <Route path="/kleine-betriebe" component={KleineBetriebe} />
+      <Route path="/datenschutz" component={Datenschutz} />
+      <Route path="/impressum" component={Impressum} />
+      <Route path="/kontakt" component={Kontakt} />
+      <Route path="/thema/:id" component={Thema} />
+      <Route path="/kategorie/:id" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
