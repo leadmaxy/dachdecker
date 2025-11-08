@@ -16,3 +16,49 @@ export const insertUserSchema = createInsertSchema(users).pick({
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
+
+export const contentTopics = [
+  { id: "mobile-zeiterfassung", title: "Mobile Zeiterfassung", category: "Funktionen" },
+  { id: "cloud-vs-onprem", title: "Cloud vs. On-Premise", category: "Vergleich" },
+  { id: "funktionen", title: "Funktionen moderner SHK-Software", category: "Übersicht" },
+  { id: "preismodelle", title: "Preismodelle & Lizenzarten", category: "Kosten" },
+  { id: "einfuehrung", title: "Erfolgreiche Einführung", category: "Implementierung" },
+  { id: "kleine-betriebe", title: "Software für kleine Betriebe", category: "Betriebsgröße" },
+  { id: "schnittstellen", title: "Wichtige Schnittstellen", category: "Integration" },
+  { id: "wartung-digital", title: "Wartung digitalisieren", category: "Service" },
+  { id: "trends-2025", title: "Trends 2025", category: "Zukunft" },
+  { id: "effizienz", title: "Erfolg messen", category: "ROI" },
+] as const;
+
+export const faqData = [
+  {
+    topic: "Cloud",
+    question: "Ist Cloud-Software im Handwerk sicher?",
+    answer: "Ja, wenn sie DSGVO-konform betrieben wird und Serverstandorte in Deutschland hat."
+  },
+  {
+    topic: "Mobile",
+    question: "Kann ich Zeiterfassung offline nutzen?",
+    answer: "Ja, viele mobile Apps synchronisieren Daten später automatisch."
+  },
+  {
+    topic: "Wartung",
+    question: "Wie automatisiere ich Wartungsverträge?",
+    answer: "Über digitale Wartungszyklen und Terminvorlagen im Wartungsmodul."
+  },
+  {
+    topic: "Cloud",
+    question: "Welche Vorteile bietet Cloud-Software gegenüber On-Premise?",
+    answer: "Cloud-Software bietet Flexibilität, automatische Updates, geringere Infrastrukturkosten und Zugriff von überall."
+  },
+  {
+    topic: "Integration",
+    question: "Welche Schnittstellen sind für SHK-Betriebe wichtig?",
+    answer: "DATEV für Buchhaltung, DATANORM für Artikeldaten und IDS für Leistungsverzeichnisse sind essentiell."
+  },
+  {
+    topic: "Kosten",
+    question: "Was kostet professionelle SHK-Software?",
+    answer: "Die Preise variieren zwischen 39 EUR/Monat für Cloud-Lösungen bis zu mehreren tausend Euro für Kaufsoftware."
+  }
+] as const;
