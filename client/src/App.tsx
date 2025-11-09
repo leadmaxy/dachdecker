@@ -16,6 +16,7 @@ import Datenschutz from "@/pages/Datenschutz";
 import Impressum from "@/pages/Impressum";
 import Kontakt from "@/pages/Kontakt";
 import Thema from "@/pages/Thema";
+import SoftwareDetail from "@/pages/SoftwareDetail";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -34,7 +35,7 @@ function Router() {
       <Route path="/impressum" component={Impressum} />
       <Route path="/kontakt" component={Kontakt} />
       <Route path="/thema/:id" component={Thema} />
-      <Route path="/kategorie/:id" component={NotFound} />
+      <Route path="/software/:slug" component={SoftwareDetail} />
       <Route component={NotFound} />
     </Switch>
   );

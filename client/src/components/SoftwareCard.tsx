@@ -2,6 +2,8 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
+import { Link } from "wouter";
+import { routes, createSoftwareSlug } from "@/lib/navigation";
 
 interface SoftwareCardProps {
   name: string;
@@ -74,8 +76,10 @@ export default function SoftwareCard({
       </CardContent>
 
       <CardFooter>
-        <Button className="w-full" variant={recommended ? "default" : "outline"} data-testid="button-details">
-          Details ansehen
+        <Button asChild className="w-full" variant={recommended ? "default" : "outline"} data-testid="button-details">
+          <Link href={routes.software(createSoftwareSlug(name))}>
+            Details ansehen
+          </Link>
         </Button>
       </CardFooter>
     </Card>

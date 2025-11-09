@@ -2,6 +2,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { categoryRoutes } from "@/lib/navigation";
 import cloudIcon from "@assets/generated_images/Cloud_software_icon_illustration_b558c660.png";
 import mobileIcon from "@assets/generated_images/Mobile_app_icon_illustration_b4e37a03.png";
 import integrationIcon from "@assets/generated_images/Integration_icon_illustration_bc89c7b3.png";
@@ -45,7 +46,7 @@ export default function VisualCategorySection({ title, subtitle, categories }: V
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
-            <Link key={category.id} href={`/kategorie/${category.id}`}>
+            <Link key={category.id} href={categoryRoutes[category.id] || "/"}>
               <Card 
                 className="hover-elevate active-elevate-2 transition-all cursor-pointer h-full group border-2 border-transparent hover:border-primary/20"
                 data-testid={`card-category-${category.id}`}

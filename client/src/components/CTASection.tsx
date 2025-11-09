@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield } from "lucide-react";
+import { Link } from "wouter";
+import { routes } from "@/lib/navigation";
 
 interface CTASectionProps {
   title: string;
@@ -29,11 +31,15 @@ export default function CTASection({
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <Button size="lg" data-testid="button-cta-primary">
-            {primaryButtonText}
+          <Button asChild size="lg" data-testid="button-cta-primary">
+            <Link href={routes.vergleich}>
+              {primaryButtonText}
+            </Link>
           </Button>
-          <Button size="lg" variant="outline" data-testid="button-cta-secondary">
-            {secondaryButtonText}
+          <Button asChild size="lg" variant="outline" data-testid="button-cta-secondary">
+            <Link href={routes.kontakt}>
+              {secondaryButtonText}
+            </Link>
           </Button>
         </div>
 

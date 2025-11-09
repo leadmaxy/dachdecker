@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Shield, TrendingUp } from "lucide-react";
+import { Link } from "wouter";
+import { routes } from "@/lib/navigation";
 import heroImage from "@assets/generated_images/Tradesman_with_digital_tools_49e2ab05.png";
 
 export default function EnhancedHero() {
@@ -29,11 +31,15 @@ export default function EnhancedHero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" data-testid="button-hero-compare">
-                Software vergleichen
+              <Button asChild size="lg" data-testid="button-hero-compare">
+                <Link href={routes.vergleich}>
+                  Software vergleichen
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" data-testid="button-hero-consult">
-                Kostenlos beraten lassen
+              <Button asChild size="lg" variant="outline" data-testid="button-hero-consult">
+                <Link href={routes.kontakt}>
+                  Kostenlos beraten lassen
+                </Link>
               </Button>
             </div>
 
