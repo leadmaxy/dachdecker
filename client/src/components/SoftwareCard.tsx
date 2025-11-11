@@ -13,6 +13,7 @@ interface SoftwareCardProps {
   features: string[];
   badges?: string[];
   recommended?: boolean;
+  slug?: string;
 }
 
 export default function SoftwareCard({
@@ -23,6 +24,7 @@ export default function SoftwareCard({
   features,
   badges = [],
   recommended = false,
+  slug,
 }: SoftwareCardProps) {
   return (
     <Card className={`relative ${recommended ? 'border-primary' : ''}`} data-testid={`card-software-${name.toLowerCase().replace(/\s/g, '-')}`}>
@@ -77,7 +79,7 @@ export default function SoftwareCard({
 
       <CardFooter>
         <Button asChild className="w-full" variant={recommended ? "default" : "outline"} data-testid="button-details">
-          <Link href={routes.software(createSoftwareSlug(name))}>
+          <Link href={routes.software(slug || createSoftwareSlug(name))}>
             Details ansehen
           </Link>
         </Button>
