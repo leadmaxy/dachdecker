@@ -161,6 +161,7 @@ export default function Kontakt() {
                       method="POST"
                     >
                       <input type="hidden" name="_subject" value="Neue Anfrage: Dachdecker-Software" />
+                      <input type="hidden" name="_redirect" value="https://leadmaxy.github.io/dachdecker/danke" />
                       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
                       <div className="grid gap-4 md:grid-cols-2">
                         <div className="space-y-2">
