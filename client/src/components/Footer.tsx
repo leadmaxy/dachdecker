@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground mb-4">
-              <span className="text-lg font-bold">DACH</span>
+              <span className="text-lg font-bold">DSV</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Unabhängiger Vergleich von Dachdecker-Software für Dach, Fassade und PV.
