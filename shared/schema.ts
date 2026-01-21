@@ -26,7 +26,7 @@ export const contentTopics = [
   { id: "kleine-betriebe", title: "Software für kleine Betriebe", category: "Betriebsgröße" },
   { id: "schnittstellen", title: "Wichtige Schnittstellen", category: "Integration" },
   { id: "wartung-digital", title: "Inspektion digitalisieren", category: "Service" },
-  { id: "trends-2025", title: "Trends 2025", category: "Zukunft" },
+  { id: "trends-2025", title: "Trends 2026", category: "Zukunft" },
   { id: "effizienz", title: "Erfolg messen", category: "ROI" },
 ] as const;
 

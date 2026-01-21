@@ -23,7 +23,7 @@ export default function Home() {
       name: "Das Programm",
       provider: "Das Programm",
       slug: "dasprogramm",
-      description: "Testsieger 2025 mit starkem digitalem Aufmaß und schneller Kalkulation.",
+      description: "Testsieger 2026 mit starkem digitalem Aufmaß und schneller Kalkulation.",
       priceRange: "ab 40 EUR/Monat",
       features: ["Digitales Aufmaß", "Cloud & Mobile App", "GAEB/STLB-Bau", "Material- und Gerüstplanung"],
       badges: ["Cloud", "Mobile", "Testsieger", "Aufmaß"],
@@ -149,7 +149,7 @@ export default function Home() {
     },
     {
       id: "trends-2025",
-      title: "Trends 2025",
+      title: "Trends 2026",
       category: "Zukunft",
       description: "Drohnen-Aufmaß, PV-Services und KI in der Baustellendokumentation.",
       icon: TrendingUp,

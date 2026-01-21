@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="max-w-3xl mx-auto text-center">
           <Badge className="mb-6 fade-up" variant="secondary" data-testid="badge-hero-year">
-            Marktcheck 2025
+            Marktcheck 2026
           </Badge>
           
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 fade-up fade-up-delay-1" data-testid="text-hero-title">

@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© 2025 Dachdecker-Software-Vergleich.de. Alle Rechte vorbehalten.</p>
+          <p>© 2026 Dachdecker-Software-Vergleich.de. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

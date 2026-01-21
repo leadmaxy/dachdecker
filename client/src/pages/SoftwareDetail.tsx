@@ -252,8 +252,8 @@ const softwareDatabase = {
   dasprogramm: {
     name: "Das Programm",
     provider: "Das Programm",
-    description: "Testsieger 2025 mit bestem Preis-Leistungs-Verhältnis und KI-Funktionen.",
-    longDescription: "Das Programm ist eine cloudbasierte All-in-One-Handwerkersoftware, die 2025 als Testsieger (Note 1,3) ausgezeichnet wurde. Die Software bietet das beste Preis-Leistungs-Verhältnis am Markt und zeichnet sich durch KI-gestützte Funktionen wie automatische Arbeitsbericht-Erstellung aus. Ideal für Solo-Selbstständige bis mittlere Dachdeckerbetriebe, die eine benutzerfreundliche, kosteneffiziente Lösung suchen.",
+    description: "Testsieger 2026 mit bestem Preis-Leistungs-Verhältnis und KI-Funktionen.",
+    longDescription: "Das Programm ist eine cloudbasierte All-in-One-Handwerkersoftware, die 2026 als Testsieger (Note 1,3) ausgezeichnet wurde. Die Software bietet das beste Preis-Leistungs-Verhältnis am Markt und zeichnet sich durch KI-gestützte Funktionen wie automatische Arbeitsbericht-Erstellung aus. Ideal für Solo-Selbstständige bis mittlere Dachdeckerbetriebe, die eine benutzerfreundliche, kosteneffiziente Lösung suchen.",
     priceRange: "ab 40 EUR/Monat",
     features: [
       "KI-gestützte Arbeitsbericht-Erstellung",

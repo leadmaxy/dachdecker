@@ -20,8 +20,11 @@ export default function Danke() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-thanks-title">
               Vielen Dank!
             </h1>
-            <p className="text-lg text-muted-foreground mb-8" data-testid="text-thanks-subtitle">
+            <p className="text-lg text-muted-foreground mb-4" data-testid="text-thanks-subtitle">
               Wir haben Ihre Anfrage erhalten und melden uns schnellstmöglich bei Ihnen.
+            </p>
+            <p className="text-sm text-muted-foreground mb-8" data-testid="text-thanks-detail">
+              Ihre Nachricht wurde erfolgreich gesendet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" data-testid="button-back-home">

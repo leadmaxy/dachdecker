@@ -18,7 +18,7 @@ export default function EnhancedHero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
             <Badge className="mb-6 fade-up" variant="secondary" data-testid="badge-hero-year">
-              Marktcheck 2025
+              Marktcheck 2026
             </Badge>
             
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 fade-up fade-up-delay-1" data-testid="text-hero-title">
