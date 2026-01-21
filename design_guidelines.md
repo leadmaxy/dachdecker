@@ -1,4 +1,4 @@
-# SHK Software Vergleich – Design Guidelines
+# Dachdecker Software Vergleich – Design Guidelines
 
 ## Design Approach
 **Reference-Based Approach** drawing from professional B2B comparison platforms (Capterra, G2) combined with modern German web standards. The design prioritizes clarity, trust, and efficient information consumption for trade professionals making software purchasing decisions.
@@ -13,9 +13,9 @@
 
 ## Typography
 
-**Primary Font**: Inter or Source Sans Pro (Google Fonts)
-- Headings: 600-700 weight
-- Body: 400 weight
+**Primary Font**: IBM Plex Sans + Space Grotesk (Google Fonts)
+- Headings: 600-700 weight (Space Grotesk)
+- Body: 400 weight (IBM Plex Sans)
 - Emphasis: 500 weight
 
 **Type Scale**:
@@ -60,7 +60,7 @@
 - Text-focused hero (no large background image - professionals want information immediately)
 - Concise headline + 2-3 sentence value proposition
 - Primary CTA: "Software vergleichen" + Secondary: "Kostenlos beraten lassen"
-- Quick stats bar below hero (e.g., "50+ Software-Lösungen", "DSGVO-konform", "Unabhängig")
+- Quick stats bar below hero (e.g., "40+ Dachdecker-Lösungen", "DSGVO-konform", "Branchenfokus Dach & Fassade")
 
 ### Comparison Tables
 - Sticky header row with software names
@@ -77,7 +77,7 @@
 
 ### FAQ Section
 - Accordion pattern with question as header
-- Icons for categories (Cloud, Mobile, Wartung)
+- Icons for categories (Cloud, Mobile, Inspektion)
 - Smooth expand/collapse animation
 - Schema.org FAQPage markup (implemented in code)
 
@@ -95,7 +95,7 @@
 
 ### Badges & Labels
 - Category tags: rounded-full px-3 py-1 text-sm
-- Feature indicators: "Neu", "Beliebt", "DSGVO", "Cloud"
+- Feature indicators: "Neu", "Beliebt", "DSGVO", "Cloud", "Inspektion"
 - Trust markers: TÜV, ISO certifications as small icons with tooltips
 
 ---

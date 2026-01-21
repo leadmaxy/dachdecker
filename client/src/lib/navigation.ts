@@ -1,5 +1,5 @@
 /**
- * Central navigation mapping for the SHK Software Vergleich application.
+ * Central navigation mapping for the Dachdecker Software Vergleich application.
  * This module provides type-safe route definitions and helper functions.
  */
 

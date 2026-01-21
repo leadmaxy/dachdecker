@@ -10,22 +10,22 @@ export default function IllustratedFeatureGridExample() {
     {
       icon: "mobile" as const,
       title: "Mobile App",
-      description: "Zeiterfassung und Auftragsabwicklung direkt vom Smartphone, auch offline nutzbar."
+      description: "Zeiterfassung und Baustellendoku direkt vom Smartphone, auch offline nutzbar."
     },
     {
       icon: "integration" as const,
       title: "Schnittstellen",
-      description: "Integration mit DATEV, DATANORM und weiteren branchenüblichen Systemen."
+      description: "Integration mit DATEV, GAEB, STLB-Bau und weiteren Branchenstandards."
     },
     {
       icon: "time" as const,
-      title: "Zeiterfassung",
-      description: "Erfassen Sie Arbeitszeiten projektbezogen und optimieren Sie Ihre Kalkulation."
+      title: "Kalkulation",
+      description: "Dachflächen, Material und Lohn in Minuten kalkulieren."
     },
     {
       icon: "maintenance" as const,
-      title: "Wartungsmodul",
-      description: "Digitale Wartungsplanung mit automatischen Erinnerungen und Terminvorlagen."
+      title: "Inspektion & Wartung",
+      description: "Digitale Inspektionspläne mit Erinnerungen und Checklisten."
     },
     {
       icon: "default" as const,
@@ -36,7 +36,7 @@ export default function IllustratedFeatureGridExample() {
 
   return (
     <IllustratedFeatureGrid
-      title="Funktionen moderner SHK-Software"
+      title="Funktionen moderner Dachdecker-Software"
       features={mockFeatures}
     />
   );

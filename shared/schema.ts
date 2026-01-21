@@ -20,12 +20,12 @@ export type User = typeof users.$inferSelect;
 export const contentTopics = [
   { id: "mobile-zeiterfassung", title: "Mobile Zeiterfassung", category: "Funktionen" },
   { id: "cloud-vs-onprem", title: "Cloud vs. On-Premise", category: "Vergleich" },
-  { id: "funktionen", title: "Funktionen moderner SHK-Software", category: "Übersicht" },
+  { id: "funktionen", title: "Funktionen moderner Dachdecker-Software", category: "Übersicht" },
   { id: "preismodelle", title: "Preismodelle & Lizenzarten", category: "Kosten" },
   { id: "einfuehrung", title: "Erfolgreiche Einführung", category: "Implementierung" },
   { id: "kleine-betriebe", title: "Software für kleine Betriebe", category: "Betriebsgröße" },
   { id: "schnittstellen", title: "Wichtige Schnittstellen", category: "Integration" },
-  { id: "wartung-digital", title: "Wartung digitalisieren", category: "Service" },
+  { id: "wartung-digital", title: "Inspektion digitalisieren", category: "Service" },
   { id: "trends-2025", title: "Trends 2025", category: "Zukunft" },
   { id: "effizienz", title: "Erfolg messen", category: "ROI" },
 ] as const;
@@ -33,7 +33,7 @@ export const contentTopics = [
 export const faqData = [
   {
     topic: "Cloud",
-    question: "Ist Cloud-Software im Handwerk sicher?",
+    question: "Ist Cloud-Software im Dachdeckerhandwerk sicher?",
     answer: "Ja, wenn sie DSGVO-konform betrieben wird und Serverstandorte in Deutschland hat."
   },
   {
@@ -43,8 +43,8 @@ export const faqData = [
   },
   {
     topic: "Wartung",
-    question: "Wie automatisiere ich Wartungsverträge?",
-    answer: "Über digitale Wartungszyklen und Terminvorlagen im Wartungsmodul."
+    question: "Wie digitalisiere ich Inspektionen und Wartung?",
+    answer: "Über digitale Inspektionszyklen, Checklisten und Terminvorlagen im Wartungsmodul."
   },
   {
     topic: "Cloud",
@@ -53,12 +53,12 @@ export const faqData = [
   },
   {
     topic: "Integration",
-    question: "Welche Schnittstellen sind für SHK-Betriebe wichtig?",
-    answer: "DATEV für Buchhaltung, DATANORM für Artikeldaten und IDS für Leistungsverzeichnisse sind essentiell."
+    question: "Welche Schnittstellen sind für Dachdeckerbetriebe wichtig?",
+    answer: "DATEV für Buchhaltung, GAEB/STLB-Bau für Ausschreibungen sowie Hersteller- und Großhandelsschnittstellen sind zentral."
   },
   {
     topic: "Kosten",
-    question: "Was kostet professionelle SHK-Software?",
-    answer: "Die Preise variieren zwischen 39 EUR/Monat für Cloud-Lösungen bis zu mehreren tausend Euro für Kaufsoftware."
+    question: "Was kostet professionelle Dachdecker-Software?",
+    answer: "Die Preise variieren zwischen 29 EUR/Monat für Cloud-Lösungen bis zu mehreren tausend Euro für Kaufsoftware."
   }
 ] as const;

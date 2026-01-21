@@ -17,7 +17,7 @@ export default function FAQ() {
                 Häufig gestellte Fragen
               </h1>
               <p className="text-lg text-muted-foreground">
-                Antworten auf die wichtigsten Fragen rund um SHK-Software
+                Antworten auf die wichtigsten Fragen rund um Dachdecker-Software
               </p>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function FAQ() {
 
         <CTASection
           title="Weitere Fragen?"
-          description="Kontaktieren Sie uns für eine persönliche Beratung zu SHK-Software für Ihren Betrieb."
+          description="Kontaktieren Sie uns für eine persönliche Beratung zu Dachdecker-Software für Ihren Betrieb."
           primaryButtonText="Kontakt aufnehmen"
           secondaryButtonText="Zurück zur Übersicht"
         />

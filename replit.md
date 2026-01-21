@@ -1,8 +1,8 @@
-# SHK Software Vergleich
+# Dachdecker Software Vergleich
 
 ## Overview
 
-SHK Software Vergleich is a German B2B comparison platform for software solutions in the SHK sector (Sanitär, Heizung, Klima - Plumbing, Heating, Air Conditioning). The application provides comprehensive comparisons, feature overviews, pricing information, and educational content to help tradespeople and small businesses select appropriate software solutions for their operations.
+Dachdecker Software Vergleich is a German B2B comparison platform for software solutions in the roofing sector (Dach, Fassade, PV). The application provides comprehensive comparisons, feature overviews, pricing information, and educational content to help tradespeople and small businesses select appropriate software solutions for their operations.
 
 The platform focuses on delivering professional, trustworthy content with clear information hierarchy, following German web conventions and DSGVO (GDPR) compliance requirements. It serves multiple user intents: informational (understanding features), comparative (choosing between solutions), transactional (requesting demos), and problem-solving (implementation guidance).
 

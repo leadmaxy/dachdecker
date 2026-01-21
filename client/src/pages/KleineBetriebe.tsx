@@ -71,21 +71,21 @@ export default function KleineBetriebe() {
       empfehlung: "Basis Cloud-Lösung",
       preis: "30-60 €/Monat",
       funktionen: "Auftragsabwicklung, Kunden, einfache Zeiterfassung",
-      beispiele: ["Handwerker-Software Basis-Pakete", "SHK-Komplett Starter"]
+      beispiele: ["Dachdecker-Software Basis-Pakete", "Dach-Komplett Starter"]
     },
     {
       betriebsgroesse: "2-5 Mitarbeiter",
       empfehlung: "Standard Cloud-Lösung",
       preis: "100-250 €/Monat",
       funktionen: "Aufträge, Kunden, Zeiterfassung, Mobile App, DATEV",
-      beispiele: ["SHK-Komplett Standard", "Handwerker-Software Professional"]
+      beispiele: ["Dach-Komplett Standard", "Handwerker-Software Professional"]
     },
     {
       betriebsgroesse: "6-10 Mitarbeiter",
       empfehlung: "Professional Cloud-Lösung",
       preis: "300-600 €/Monat",
       funktionen: "Alle Standard-Features + Lager, Wartung, Controlling",
-      beispiele: ["SHK-Komplett Plus", "Enterprise-Lösungen für Handwerk"]
+      beispiele: ["Dach-Komplett Plus", "Enterprise-Lösungen für Handwerk"]
     }
   ];
 
@@ -98,7 +98,7 @@ export default function KleineBetriebe() {
     {
       icon: Users,
       title: "Mitarbeiter einbeziehen",
-      description: "Lassen Sie Ihre Monteure bei der Auswahl mitreden – sie müssen später täglich damit arbeiten."
+      description: "Lassen Sie Ihre Teams bei der Auswahl mitreden – sie müssen später täglich damit arbeiten."
     },
     {
       icon: Zap,
@@ -134,7 +134,7 @@ export default function KleineBetriebe() {
                 Für kleine Betriebe
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                SHK-Software für kleine Betriebe
+                Dachdecker-Software für kleine Betriebe
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
                 Als kleiner Betrieb brauchen Sie eine Lösung, die einfach ist, wenig kostet 
@@ -282,7 +282,7 @@ export default function KleineBetriebe() {
                 Die richtige Software für Ihren kleinen Betrieb finden
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Vergleichen Sie Lösungen, die speziell für kleine SHK-Betriebe entwickelt wurden. 
+                Vergleichen Sie Lösungen, die speziell für kleine Dachdeckerbetriebe entwickelt wurden. 
                 Einfach, günstig und trotzdem professionell.
               </p>
             </div>

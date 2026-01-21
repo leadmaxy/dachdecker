@@ -88,12 +88,12 @@ export default function Datenschutz() {
               </p>
               
               <p className="text-muted-foreground mb-4">
-                SHK-Software-Vergleich.de<br />
+                Dachdecker-Software-Vergleich.de<br />
                 Max Mustermann<br />
                 Musterstraße 123<br />
                 12345 Musterstadt<br />
                 Telefon: +49 (0) 123 456789<br />
-                E-Mail: info@shk-software-vergleich.de
+                E-Mail: info@dachdecker-software-vergleich.de
               </p>
               
               <p className="text-xs text-muted-foreground/70 mb-4 pt-2 border-t">

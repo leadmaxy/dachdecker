@@ -26,7 +26,7 @@ interface TopicContent {
 const topicContent: Record<string, TopicContent> = {
   "datev-schnittstelle": {
     id: "datev-schnittstelle",
-    title: "DATEV-Schnittstelle für SHK-Software",
+    title: "DATEV-Schnittstelle für Dachdecker-Software",
     description: "Automatischer Datenaustausch mit Ihrem Steuerbüro",
     badge: "Wichtig für Buchhaltung",
     sections: [
@@ -36,7 +36,7 @@ const topicContent: Record<string, TopicContent> = {
       },
       {
         title: "Wie funktioniert es?",
-        content: "Ihre SHK-Software exportiert alle relevanten Finanzdaten (Rechnungen, Zahlungen, Belege) in einem DATEV-kompatiblen Format. Ihr Steuerberater importiert diese Datei direkt in DATEV und muss die Daten nicht mehr manuell abtippen. Das spart beiden Seiten Zeit und Geld."
+        content: "Ihre Dachdecker-Software exportiert alle relevanten Finanzdaten (Rechnungen, Zahlungen, Belege) in einem DATEV-kompatiblen Format. Ihr Steuerberater importiert diese Datei direkt in DATEV und muss die Daten nicht mehr manuell abtippen. Das spart beiden Seiten Zeit und Geld."
       },
       {
         title: "Welche Daten werden übertragen?",
@@ -52,22 +52,22 @@ const topicContent: Record<string, TopicContent> = {
     ],
     cta: {
       title: "Software mit DATEV-Schnittstelle finden",
-      description: "Vergleichen Sie SHK-Software mit DATEV-Anbindung und erleichtern Sie Ihre Buchhaltung."
+      description: "Vergleichen Sie Dachdecker-Software mit DATEV-Anbindung und erleichtern Sie Ihre Buchhaltung."
     }
   },
   "mobile-zeiterfassung": {
     id: "mobile-zeiterfassung",
-    title: "Mobile Zeiterfassung für Monteure",
+    title: "Mobile Zeiterfassung für Dachdecker-Teams",
     description: "Arbeitszeiten direkt auf der Baustelle erfassen",
     badge: "Effizienz steigern",
     sections: [
       {
         title: "Warum mobile Zeiterfassung?",
-        content: "Handschriftliche Stundenzettel sind fehleranfällig, gehen verloren und müssen im Büro mühsam abgetippt werden. Mit mobiler Zeiterfassung erfassen Ihre Monteure Arbeitszeiten direkt am Einsatzort per Smartphone oder Tablet – und die Daten landen automatisch im System."
+        content: "Handschriftliche Stundenzettel sind fehleranfällig, gehen verloren und müssen im Büro mühsam abgetippt werden. Mit mobiler Zeiterfassung erfassen Ihre Teams Arbeitszeiten direkt am Einsatzort per Smartphone oder Tablet – und die Daten landen automatisch im System."
       },
       {
         title: "Funktionsweise",
-        content: "Der Monteur startet und stoppt die Zeiterfassung in der App, ordnet sie dem jeweiligen Auftrag oder Projekt zu und kann Pausen, Fahrzeiten und Material-Verbrauch direkt erfassen. Optional wird der GPS-Standort mitprotokolliert. Alle Daten werden synchronisiert, sobald Internet verfügbar ist."
+        content: "Der Mitarbeiter startet und stoppt die Zeiterfassung in der App, ordnet sie dem jeweiligen Auftrag oder Projekt zu und kann Pausen, Fahrzeiten und Materialverbrauch direkt erfassen. Optional wird der GPS-Standort mitprotokolliert. Alle Daten werden synchronisiert, sobald Internet verfügbar ist."
       },
       {
         title: "Vorteile für die Kalkulation",
@@ -83,13 +83,13 @@ const topicContent: Record<string, TopicContent> = {
       "Weniger Verwaltungsaufwand"
     ],
     cta: {
-      title: "SHK-Software mit mobiler Zeiterfassung",
-      description: "Finden Sie die passende Lösung mit mobiler App für Ihre Monteure."
+      title: "Dachdecker-Software mit mobiler Zeiterfassung",
+      description: "Finden Sie die passende Lösung mit mobiler App für Ihre Teams."
     }
   },
   "auftragsabwicklung": {
     id: "auftragsabwicklung",
-    title: "Digitale Auftragsabwicklung im SHK-Handwerk",
+    title: "Digitale Auftragsabwicklung im Dachdeckerhandwerk",
     description: "Von der Anfrage bis zur Rechnung – alles digital",
     badge: "Kernfunktion",
     sections: [
@@ -99,7 +99,7 @@ const topicContent: Record<string, TopicContent> = {
       },
       {
         title: "Automatisierung spart Zeit",
-        content: "Vorlagen für Angebote, automatische Übernahme von Kundendaten, Artikelstammdaten aus DATANORM und rechtskonforme Rechnungsstellung nach GoBD – all das beschleunigt Ihre Prozesse erheblich. Was früher Stunden dauerte, ist heute in Minuten erledigt."
+        content: "Vorlagen für Angebote, automatische Übernahme von Kundendaten, Leistungsverzeichnisse aus GAEB/STLB-Bau und rechtskonforme Rechnungsstellung nach GoBD – all das beschleunigt Ihre Prozesse erheblich. Was früher Stunden dauerte, ist heute in Minuten erledigt."
       },
       {
         title: "Alles an einem Ort",

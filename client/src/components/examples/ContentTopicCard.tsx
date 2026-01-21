@@ -8,7 +8,7 @@ export default function ContentTopicCardExample() {
         id="cloud-vs-onprem"
         title="Cloud vs. On-Premise"
         category="Vergleich"
-        description="Welche Lösung passt für SHK-Betriebe? Vergleichen Sie Flexibilität, Kosten und Sicherheit."
+        description="Welche Lösung passt für Dachdeckerbetriebe? Vergleichen Sie Flexibilität, Kosten und Sicherheit."
         icon={Cloud}
       />
     </div>

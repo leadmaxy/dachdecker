@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground mb-4">
-              <span className="text-lg font-bold">SHK</span>
+              <span className="text-lg font-bold">DACH</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Unabhängiger Vergleich von SHK-Software für Sanitär, Heizung und Klima.
+              Unabhängiger Vergleich von Dachdecker-Software für Dach, Fassade und PV.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© 2025 SHK-Software-Vergleich.de. Alle Rechte vorbehalten.</p>
+          <p>© 2025 Dachdecker-Software-Vergleich.de. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

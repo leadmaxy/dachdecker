@@ -19,17 +19,17 @@ export default function Wartung() {
     {
       icon: Calendar,
       title: "Automatische Terminplanung",
-      description: "Das System erinnert automatisch an fällige Wartungen und schlägt optimale Terminvorschläge vor."
+      description: "Das System erinnert automatisch an fällige Inspektionen und schlägt optimale Terminvorschläge vor."
     },
     {
       icon: Bell,
       title: "Erinnerungen",
-      description: "Kunden und Monteure erhalten rechtzeitig Benachrichtigungen über anstehende Wartungstermine."
+      description: "Kunden und Teams erhalten rechtzeitig Benachrichtigungen über anstehende Inspektionstermine."
     },
     {
       icon: FileCheck,
       title: "Digitale Protokolle",
-      description: "Wartungsprotokolle werden digital erstellt, archiviert und sind jederzeit abrufbar."
+      description: "Inspektionsprotokolle werden digital erstellt, archiviert und sind jederzeit abrufbar."
     },
     {
       icon: ClipboardList,
@@ -39,54 +39,54 @@ export default function Wartung() {
     {
       icon: Users,
       title: "Kundenbindung",
-      description: "Wartungsverträge schaffen planbare Umsätze und regelmäßigen Kundenkontakt."
+      description: "Inspektionsverträge schaffen planbare Umsätze und regelmäßigen Kundenkontakt."
     },
     {
       icon: TrendingUp,
       title: "Auslastungsoptimierung",
-      description: "Planen Sie Wartungen in auftragsschwachen Zeiten und optimieren Sie die Monteur-Auslastung."
+      description: "Planen Sie Inspektionen in auftragsschwachen Zeiten und optimieren Sie die Auslastung."
     }
   ];
 
   const types = [
     {
-      type: "Heizungswartung",
-      details: "Jährliche Inspektion von Gas-, Öl- oder Pelletheizungen inkl. Brenner-Check, Abgasmessung und Reinigung."
+      type: "Dachinspektion",
+      details: "Jährliche Sichtprüfung von Steil- und Flachdächern inkl. Dokumentation von Schäden und Verschleiß."
     },
     {
-      type: "Trinkwasser-Prüfung",
-      details: "Legionellen-Prüfung, Temperaturmessung und Dokumentation gemäß Trinkwasserverordnung."
+      type: "Rinnen- und Ablaufkontrolle",
+      details: "Reinigung, Funktionsprüfung und Dichtigkeitscheck von Dachrinnen und Abläufen."
     },
     {
-      type: "Solaranlagen-Wartung",
-      details: "Kontrolle der Solarkollektoren, Prüfung der Solarflüssigkeit und Funktionstest der Regelung."
+      type: "PV-Check",
+      details: "Sichtkontrolle der Module, Unterkonstruktion und Verkabelung sowie Prüfung von Befestigungen."
     },
     {
-      type: "Lüftungsanlagen",
-      details: "Filterwechsel, Reinigung und Funktionsprüfung von kontrollierten Wohnraumlüftungen."
+      type: "Flachdachabdichtung",
+      details: "Kontrolle von Nähten, Durchdringungen und Aufkantungen inklusive Fotodokumentation."
     },
     {
-      type: "Wärmepumpen",
-      details: "Inspektion, Druckprüfung und Effizienz-Check der Wärmepumpenanlage."
+      type: "Dachfenster & Anschlüsse",
+      details: "Prüfung von Dachfenstern, Anschlüssen und Einbauteilen auf Dichtheit und Funktion."
     },
     {
-      type: "Aufzug-Wartung",
-      details: "Regelmäßige Prüfung und Wartung von Aufzugsanlagen nach gesetzlichen Vorgaben."
+      type: "Blitzschutz",
+      details: "Sichtprüfung der Fangeinrichtungen und Verbindungen gemäß Inspektionsplan."
     }
   ];
 
   const benefits = [
     {
       title: "Planbare Umsätze",
-      description: "Wartungsverträge bringen regelmäßige, kalkulierbare Einnahmen – unabhängig von Saisongeschäft."
+      description: "Inspektionsverträge bringen regelmäßige, kalkulierbare Einnahmen – unabhängig vom Saisongeschäft."
     },
     {
       title: "Auslastung optimieren",
-      description: "Füllen Sie auftragsschwache Zeiten im Sommer mit Wartungsarbeiten und vermeiden Sie Leerlauf."
+      description: "Füllen Sie auftragsschwache Zeiten im Sommer mit Inspektionen und vermeiden Sie Leerlauf."
     },
     {
       title: "Weniger Notdienste",
-      description: "Gut gewartete Anlagen fallen seltener aus – weniger Notrufe am Wochenende oder Feiertag."
+      description: "Gut gepflegte Dächer verursachen weniger Notfälle – weniger Notrufe am Wochenende oder Feiertag."
     },
     {
       title: "Kundenbindung",
@@ -94,7 +94,7 @@ export default function Wartung() {
     },
     {
       title: "Cross-Selling",
-      description: "Bei Wartungen entdecken Sie oft Optimierungspotenzial – Chance für Zusatzaufträge und Modernisierungen."
+      description: "Bei Inspektionen entdecken Sie oft Optimierungspotenzial – Chance für Zusatzaufträge und Modernisierungen."
     },
     {
       title: "Professioneller Auftritt",
@@ -105,27 +105,27 @@ export default function Wartung() {
   const workflow = [
     {
       step: "1. Vertrag anlegen",
-      description: "Erfassen Sie Wartungsverträge mit Kunde, Objekt, Intervall und Leistungsumfang im System."
+      description: "Erfassen Sie Inspektionsverträge mit Kunde, Objekt, Intervall und Leistungsumfang im System."
     },
     {
       step: "2. Automatische Planung",
-      description: "Die Software plant Termine automatisch basierend auf dem Wartungsintervall und Ihrer Kapazität."
+      description: "Die Software plant Termine automatisch basierend auf dem Inspektionsintervall und Ihrer Kapazität."
     },
     {
       step: "3. Erinnerungen",
-      description: "Kunden erhalten Erinnerungen per E-Mail oder SMS, Monteure sehen anstehende Termine in der App."
+      description: "Kunden erhalten Erinnerungen per E-Mail oder SMS, Teams sehen anstehende Termine in der App."
     },
     {
       step: "4. Durchführung",
-      description: "Monteur arbeitet Checkliste ab, macht Fotos und lässt sich das Protokoll unterschreiben."
+      description: "Team arbeitet Checkliste ab, macht Fotos und lässt sich das Protokoll unterschreiben."
     },
     {
       step: "5. Dokumentation",
-      description: "Das Wartungsprotokoll wird automatisch archiviert und dem Kunden per E-Mail zugeschickt."
+      description: "Das Inspektionsprotokoll wird automatisch archiviert und dem Kunden per E-Mail zugeschickt."
     },
     {
       step: "6. Abrechnung",
-      description: "Wartungsgebühr wird automatisch in Rechnung gestellt – oder per Lastschrift eingezogen."
+      description: "Inspektionsgebühr wird automatisch in Rechnung gestellt – oder per Lastschrift eingezogen."
     }
   ];
 
@@ -138,14 +138,14 @@ export default function Wartung() {
           <div className="container mx-auto max-w-7xl px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <Badge className="mb-4" variant="secondary" data-testid="badge-page">
-                Wartungsmodule
+                Inspektionsmodule
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                Digitale Wartungsplanung für SHK-Betriebe
+                Digitale Inspektionsplanung für Dachdeckerbetriebe
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
-                Wartungsverträge sind eine wichtige Einnahmequelle für SHK-Betriebe. 
-                Mit digitaler Wartungsplanung vergessen Sie keine Termine mehr und steigern Ihre Kundenbindung.
+                Inspektionsverträge sind eine wichtige Einnahmequelle für Dachdeckerbetriebe. 
+                Mit digitaler Planung vergessen Sie keine Termine mehr und steigern Ihre Kundenbindung.
               </p>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Wartung() {
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
             <h2 className="text-3xl font-bold text-center mb-12" data-testid="text-features-title">
-              Funktionen eines Wartungsmoduls
+              Funktionen eines Inspektionsmoduls
             </h2>
             
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
@@ -180,7 +180,7 @@ export default function Wartung() {
             </div>
 
             <h2 className="text-3xl font-bold text-center mb-12" data-testid="text-types-title">
-              Typische Wartungsarbeiten im SHK-Bereich
+              Typische Inspektionsarbeiten im Dachdeckerhandwerk
             </h2>
             
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
@@ -231,7 +231,7 @@ export default function Wartung() {
             </div>
 
             <h2 className="text-3xl font-bold text-center mb-12" data-testid="text-workflow-title">
-              So funktioniert digitale Wartungsplanung
+              So funktioniert digitale Inspektionsplanung
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6">
@@ -269,15 +269,15 @@ export default function Wartung() {
             <div className="mb-8">
               <Wrench className="h-12 w-12 text-primary mx-auto mb-4" />
               <h2 className="text-3xl font-bold mb-6" data-testid="text-cta-title">
-                Software mit professionellem Wartungsmodul finden
+                Software mit professionellem Inspektionsmodul finden
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Vergleichen Sie SHK-Software mit Wartungsfunktionen und steigern Sie 
+                Vergleichen Sie Dachdecker-Software mit Inspektionsfunktionen und steigern Sie 
                 Ihre Effizienz und Kundenzufriedenheit.
               </p>
             </div>
             <Button size="lg" data-testid="button-cta-compare">
-              Software mit Wartungsmodul vergleichen
+              Software mit Inspektionsmodul vergleichen
             </Button>
           </div>
         </section>

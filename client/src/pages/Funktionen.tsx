@@ -25,7 +25,7 @@ export default function Funktionen() {
       icon: FileText,
       features: [
         "Digitale Auftragserfassung mit Vorlagen",
-        "Angebotserstellung mit DATANORM-Anbindung",
+        "Angebotserstellung mit GAEB/STLB-Bau",
         "Automatische Rechnungsstellung",
         "Mahnwesen und Zahlungsüberwachung",
         "Digitale Auftragsakte mit Dokumentenverwaltung"
@@ -50,7 +50,7 @@ export default function Funktionen() {
         "Automatische Nachbestellung bei Mindestbestand",
         "Fahrzeugbestand und mobile Lager verwalten",
         "Inventur-Funktionen",
-        "Integration mit Großhandel-Bestellsystemen"
+        "Integration mit Hersteller- und Großhandelssystemen"
       ]
     },
     {
@@ -59,20 +59,20 @@ export default function Funktionen() {
       features: [
         "Zentrale Kundendatenbank",
         "Ansprechpartner und Kontakthistorie",
-        "Objekte und Anlagen zu Kunden zuordnen",
+        "Gebäude, Dachflächen und PV-Anlagen zu Kunden zuordnen",
         "Automatische Geburtstags- und Jubiläumserinnerungen",
         "DSGVO-konforme Datenverwaltung"
       ]
     },
     {
-      title: "Wartung & Service",
+      title: "Inspektion & Wartung",
       icon: Wrench,
       features: [
-        "Wartungsverträge digital verwalten",
-        "Automatische Wartungserinnerungen",
-        "Prüfprotokoll-Erstellung für Heizungsanlagen",
-        "Störungsmeldungen und Notdienst-Koordination",
-        "Digitales Wartungsheft"
+        "Inspektionsverträge digital verwalten",
+        "Automatische Erinnerungen und Intervalle",
+        "Inspektionsprotokolle für Dächer und Fassaden",
+        "Mängel- und Reparaturmeldungen koordinieren",
+        "Digitale Objekt- und Wartungshistorie"
       ]
     },
     {
@@ -113,8 +113,8 @@ export default function Funktionen() {
       icon: Database,
       features: [
         "DATEV-Schnittstelle für Buchhaltung",
-        "DATANORM für Artikelstammdaten",
-        "GAEB für öffentliche Ausschreibungen",
+        "GAEB/STLB-Bau für Ausschreibungen",
+        "DATEV, ZVDH und Herstellerkataloge",
         "E-Mail und Kalender-Synchronisation",
         "API für individuelle Integrationen"
       ]
@@ -144,7 +144,7 @@ export default function Funktionen() {
                 Funktionsübersicht
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                Alle wichtigen Funktionen für SHK-Betriebe
+                Alle wichtigen Funktionen für Dachdeckerbetriebe
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
                 Moderne Handwerkersoftware bietet weit mehr als nur digitale Auftragszettel. 

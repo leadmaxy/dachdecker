@@ -19,7 +19,7 @@ export default function Impressum() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2 text-muted-foreground">
-                <p>SHK-Software-Vergleich.de</p>
+                <p>Dachdecker-Software-Vergleich.de</p>
                 <p>Max Mustermann</p>
                 <p>Musterstraße 123</p>
                 <p>12345 Musterstadt</p>
@@ -38,7 +38,7 @@ export default function Impressum() {
             <CardContent>
               <div className="space-y-2 text-muted-foreground">
                 <p>Telefon: +49 (0) 123 456789</p>
-                <p>E-Mail: info@shk-software-vergleich.de</p>
+                <p>E-Mail: info@dachdecker-software-vergleich.de</p>
               </div>
             </CardContent>
           </Card>

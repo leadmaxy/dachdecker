@@ -108,7 +108,7 @@ export default function Preise() {
                 Preisübersicht
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                Was kostet SHK-Software?
+                Was kostet Dachdecker-Software?
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
                 Transparente Übersicht zu Preismodellen, Kosten und versteckten Gebühren. 

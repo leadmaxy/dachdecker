@@ -100,7 +100,7 @@ export default function Mobile() {
     },
     {
       aspect: "Schulung",
-      details: "Planen Sie Zeit ein, um Ihre Monteure mit der App vertraut zu machen. Die meisten Apps sind intuitiv bedienbar."
+      details: "Planen Sie Zeit ein, um Ihre Teams mit der App vertraut zu machen. Die meisten Apps sind intuitiv bedienbar."
     }
   ];
 
@@ -116,10 +116,10 @@ export default function Mobile() {
                 Mobile Apps
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                Mobile Apps für SHK-Monteure
+                Mobile Apps für Dachdecker-Teams
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
-                Moderne SHK-Software bietet mobile Apps für Smartphone und Tablet. 
+                Moderne Dachdecker-Software bietet mobile Apps für Smartphone und Tablet. 
                 Erfassen Sie Zeiten, Aufträge und Material direkt vor Ort – papierlos und effizient.
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function Mobile() {
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
             <h2 className="text-3xl font-bold text-center mb-12" data-testid="text-features-title">
-              Funktionen mobiler SHK-Apps
+              Funktionen mobiler Dachdecker-Apps
             </h2>
             
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-16">
@@ -210,7 +210,7 @@ export default function Mobile() {
                 Welche Software bietet die beste mobile App?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Vergleichen Sie SHK-Software mit mobilen Apps und finden Sie die Lösung, 
+                Vergleichen Sie Dachdecker-Software mit mobilen Apps und finden Sie die Lösung, 
                 die am besten zu Ihren Arbeitsabläufen passt.
               </p>
             </div>

@@ -22,7 +22,7 @@ export default function Vergleich() {
       provider: "M-SOFT",
       description: "Cloud-basierte Komplettlösung mit allen Modulen und automatischen Updates.",
       priceRange: "ab 49 EUR/Monat",
-      features: ["Automatische Backups", "Mobile App inklusive", "DATEV-Integration", "24/7 Support"],
+      features: ["Automatische Backups", "Mobile App inklusive", "DATEV-Integration", "GAEB-Import"],
       badges: ["Cloud", "Empfohlen"],
       recommended: true,
     },
@@ -31,11 +31,11 @@ export default function Vergleich() {
       provider: "PDS GmbH",
       description: "Flexible Lösung wahlweise als Cloud oder lokale Installation verfügbar.",
       priceRange: "ab 39 EUR/Monat",
-      features: ["Hybrid-Betrieb möglich", "DATANORM-Schnittstelle", "Modularer Aufbau", "Kostenlose Updates"],
+      features: ["Hybrid-Betrieb möglich", "GAEB/STLB-Bau", "Modularer Aufbau", "Kostenlose Updates"],
       badges: ["Cloud", "On-Premise"],
     },
     {
-      name: "SHK Pro Lokal",
+      name: "Dach Pro Lokal",
       provider: "HandwerkSoft",
       description: "On-Premise Lösung für Betriebe mit eigener IT-Infrastruktur.",
       priceRange: "ab 1.499 EUR",
@@ -56,7 +56,7 @@ export default function Vergleich() {
                 Software-Vergleich
               </h1>
               <p className="text-lg text-muted-foreground">
-                Vergleichen Sie verschiedene SHK-Softwarelösungen und finden Sie die beste Option für Ihren Betrieb
+                Vergleichen Sie verschiedene Dachdecker-Softwarelösungen und finden Sie die beste Option für Ihren Betrieb
               </p>
             </div>
 

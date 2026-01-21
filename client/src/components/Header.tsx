@@ -21,10 +21,10 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <span className="text-lg font-bold">SHK</span>
+              <span className="text-lg font-bold">DACH</span>
             </div>
             <span className="hidden font-semibold sm:inline-block">
-              SHK-Software-Vergleich
+              Dachdecker-Software-Vergleich
             </span>
           </Link>
 

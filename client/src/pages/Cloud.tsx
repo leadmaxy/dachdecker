@@ -103,7 +103,7 @@ export default function Cloud() {
                 Cloud-Software
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-title">
-                Cloud-Software für SHK-Betriebe
+                Cloud-Software für Dachdeckerbetriebe
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
                 Cloud-basierte Handwerkersoftware wird immer beliebter. Erfahren Sie, 
@@ -254,7 +254,7 @@ export default function Cloud() {
                 Welche Cloud-Lösung passt zu Ihnen?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Vergleichen Sie die führenden Cloud-Lösungen für SHK-Betriebe und 
+                Vergleichen Sie die führenden Cloud-Lösungen für Dachdeckerbetriebe und 
                 finden Sie die passende Software für Ihre Anforderungen.
               </p>
             </div>

@@ -19,7 +19,7 @@ export default function Kontakt() {
     {
       icon: Mail,
       title: "E-Mail",
-      value: "info@shk-software-vergleich.de",
+      value: "info@dachdecker-software-vergleich.de",
       description: "Wir antworten in der Regel innerhalb von 24 Stunden"
     },
     {
@@ -44,7 +44,7 @@ export default function Kontakt() {
 
   const services = [
     "Kostenlose Erstberatung zur Software-Auswahl",
-    "Vergleich verschiedener SHK-Software-Lösungen",
+    "Vergleich verschiedener Dachdecker-Software-Lösungen",
     "Unterstützung bei der Anbieter-Auswahl",
     "Informationen zu Preisen und Funktionen",
     "Empfehlungen basierend auf Ihrer Betriebsgröße",
@@ -66,7 +66,7 @@ export default function Kontakt() {
                 Wir helfen Ihnen weiter
               </h1>
               <p className="text-lg text-muted-foreground" data-testid="text-subtitle">
-                Haben Sie Fragen zur passenden SHK-Software für Ihren Betrieb? 
+                Haben Sie Fragen zur passenden Dachdecker-Software für Ihren Betrieb? 
                 Kontaktieren Sie uns – wir beraten Sie kostenlos und unverbindlich.
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function Kontakt() {
                         <Label htmlFor="firma">Firma</Label>
                         <Input 
                           id="firma" 
-                          placeholder="Mustermann SHK GmbH"
+                          placeholder="Mustermann Dach GmbH"
                           data-testid="input-firma"
                         />
                       </div>

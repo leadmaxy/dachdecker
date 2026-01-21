@@ -23,29 +23,29 @@ export default function Home() {
       name: "Das Programm",
       provider: "Das Programm",
       slug: "dasprogramm",
-      description: "Testsieger 2025 mit bestem Preis-Leistungs-Verhältnis und KI-Funktionen.",
+      description: "Testsieger 2025 mit starkem digitalem Aufmaß und schneller Kalkulation.",
       priceRange: "ab 40 EUR/Monat",
-      features: ["KI-Arbeitsberichte", "Cloud & Mobile App", "Digitales Aufmaß", "DATANORM & GAEB"],
-      badges: ["Cloud", "Mobile", "Testsieger", "KI"],
+      features: ["Digitales Aufmaß", "Cloud & Mobile App", "GAEB/STLB-Bau", "Material- und Gerüstplanung"],
+      badges: ["Cloud", "Mobile", "Testsieger", "Aufmaß"],
       recommended: true,
     },
     {
       name: "Sykasoft",
       provider: "Sykasoft GmbH",
       slug: "sykasoft",
-      description: "All-in-One Cloud-Lösung für Klein- und Mittelbetriebe mit KI-Unterstützung.",
+      description: "All-in-One Cloud-Lösung für Dachdeckerbetriebe mit Baustellenfokus.",
       priceRange: "ab 39 EUR/Monat",
-      features: ["KI-gestützte Berichte", "Cloud & Mobile", "IDS-Connect", "Zeiterfassung"],
-      badges: ["Cloud", "Mobile", "KI", "DSGVO"],
+      features: ["Aufmaß & Flächenberechnung", "Cloud & Mobile", "Projekt- und Baustellenpläne", "Foto-Doku & Mängel"],
+      badges: ["Cloud", "Mobile", "Doku", "DSGVO"],
       recommended: true,
     },
     {
       name: "ToolTime",
       provider: "ToolTime GmbH",
       slug: "tooltime",
-      description: "Preiswerte, benutzerfreundliche Cloud-Lösung speziell für Klein- und Mittelbetriebe.",
+      description: "Preiswerte, benutzerfreundliche Cloud-Lösung für kleine Dachdecker-Teams.",
       priceRange: "ab 29 EUR/Monat",
-      features: ["Angebote & Rechnungen", "Mobile App", "Digitales Aufmaß", "Lexware-Integration"],
+      features: ["Angebote & Rechnungen", "Mobile App", "Baustellendokumentation", "DATEV-Export"],
       badges: ["Cloud", "Mobile", "Preis-Leistung"],
       recommended: true,
     },
@@ -53,19 +53,19 @@ export default function Home() {
       name: "mfr",
       provider: "mfr Deutschland",
       slug: "mfr",
-      description: "Field Service Management Software mit KI-gestützter Einsatzplanung.",
+      description: "Field Service Software mit starker Einsatzplanung und Routenoptimierung.",
       priceRange: "ab 145 EUR/Monat",
-      features: ["KI-Einsatzplanung", "IDS & SHK Connect", "Offline-App", "Wartungsmanagement"],
-      badges: ["Cloud", "KI", "Field Service"],
+      features: ["Einsatzplanung", "Routenoptimierung", "Team-Chat", "Wetterfenster-Planung"],
+      badges: ["Cloud", "Planung", "Field Service"],
       recommended: true,
     },
     {
       name: "OfficeOn",
       provider: "Bosch",
       slug: "officeon",
-      description: "Benutzerfreundliche Handwerkersoftware von Bosch für Büro und Baustelle.",
+      description: "Benutzerfreundliche Handwerkersoftware für Dach und Fassade.",
       priceRange: "ab 50 EUR/Monat",
-      features: ["DATANORM/IDS-Anbindung", "Mobile App", "E-Rechnung", "Offline-fähig"],
+      features: ["GAEB-Import/Export", "Mobile App", "E-Rechnung", "Checklisten"],
       badges: ["Cloud", "Mobile", "Benutzerfreundlich"],
       recommended: true,
     },
@@ -73,17 +73,17 @@ export default function Home() {
       name: "HERO",
       provider: "HERO Software",
       slug: "hero",
-      description: "Cloud-Handwerkersoftware mit bestem Mobile-App-Rating und starker SHK-Unterstützung.",
+      description: "Cloud-Handwerkersoftware mit starker Baustellendoku und Mobile-App.",
       priceRange: "ab 59 EUR/Monat",
-      features: ["IDS & SHK Connect", "Top Mobile App", "Auto-Preisupdate", "GAEB-Import/Export"],
-      badges: ["Cloud", "Mobile", "Testsieger"],
+      features: ["Mobile Baustelle", "Foto & Mängel", "Auto-Preisupdate", "GAEB-Import/Export"],
+      badges: ["Cloud", "Mobile", "Doku"],
       recommended: false,
     },
     {
       name: "Craftboxx",
       provider: "Craftboxx",
       slug: "craftboxx",
-      description: "Schlanke, fokussierte Lösung für Einsatzplanung und Zeiterfassung zu fairem Preis.",
+      description: "Schlanke, fokussierte Lösung für Einsatzplanung und Zeiterfassung.",
       priceRange: "ab 10 EUR/Monat",
       features: ["Einsatzplanung", "Zeiterfassung", "Mobile App", "Offline-Funktion"],
       badges: ["Cloud", "Mobile", "Preis-Leistung"],
@@ -93,7 +93,7 @@ export default function Home() {
       name: "Craftnote",
       provider: "Craftnote GmbH",
       slug: "craftnote",
-      description: "Moderne App-First-Lösung für digitale Baustellendokumentation und Projektmanagement.",
+      description: "Moderne App-First-Lösung für digitale Baustellendokumentation im Dachbau.",
       priceRange: "ab 39 EUR/Monat",
       features: ["Mobile App", "Baustellendokumentation", "Team-Chat", "Digitale Unterschriften"],
       badges: ["Mobile", "Cloud", "DSGVO"],
@@ -103,7 +103,7 @@ export default function Home() {
       name: "Plancraft",
       provider: "Plancraft GmbH",
       slug: "plancraft",
-      description: "Innovative All-in-One-Lösung mit Fokus auf digitale Projektplanung.",
+      description: "Innovative All-in-One-Lösung mit Fokus auf digitale Projektplanung im Bau.",
       priceRange: "ab 49 EUR/Monat",
       features: ["Projektplanung", "Materialverwaltung", "Mobile App", "E-Rechnung"],
       badges: ["Cloud", "Mobile", "DSGVO"],
@@ -116,28 +116,28 @@ export default function Home() {
       id: "mobile-zeiterfassung",
       title: "Mobile Zeiterfassung",
       category: "Funktionen",
-      description: "Monteure im Außendienst benötigen Echtzeit-Zugriff auf Aufträge und Zeiterfassung.",
+      description: "Teams auf dem Dach brauchen Echtzeit-Zugriff auf Aufträge und Zeiten.",
       icon: Smartphone,
     },
     {
       id: "cloud-vs-onprem",
       title: "Cloud vs. On-Premise",
       category: "Vergleich",
-      description: "Welche Lösung passt für SHK-Betriebe? Vergleichen Sie Flexibilität und Kosten.",
+      description: "Welche Lösung passt für Dachdeckerbetriebe? Vergleichen Sie Flexibilität und Kosten.",
       icon: Cloud,
     },
     {
       id: "schnittstellen",
       title: "Wichtige Schnittstellen",
       category: "Integration",
-      description: "DATEV, DATANORM, IDS - warum Integrationen Zeit und Geld sparen.",
+      description: "DATEV, GAEB, STLB-Bau - warum Integrationen Zeit und Geld sparen.",
       icon: Settings,
     },
     {
       id: "wartung-digital",
-      title: "Wartung digitalisieren",
+      title: "Inspektion digitalisieren",
       category: "Service",
-      description: "Automatische Terminplanung und digitale Kundendokumentation.",
+      description: "Automatische Terminplanung und digitale Objekt-Dokumentation.",
       icon: Wrench,
     },
     {
@@ -151,7 +151,7 @@ export default function Home() {
       id: "trends-2025",
       title: "Trends 2025",
       category: "Zukunft",
-      description: "KI und Automatisierung im SHK-Handwerk - von Smart Home bis Predictive Maintenance.",
+      description: "Drohnen-Aufmaß, PV-Services und KI in der Baustellendokumentation.",
       icon: TrendingUp,
     },
   ];
@@ -165,22 +165,22 @@ export default function Home() {
     {
       icon: "mobile" as const,
       title: "Mobile App",
-      description: "Zeiterfassung und Auftragsabwicklung direkt vom Smartphone, auch offline nutzbar."
+      description: "Zeiterfassung und Baustellendoku direkt vom Smartphone, auch offline nutzbar."
     },
     {
       icon: "integration" as const,
       title: "Schnittstellen",
-      description: "Integration mit DATEV, DATANORM und weiteren branchenüblichen Systemen."
+      description: "Integration mit DATEV, GAEB, STLB-Bau und weiteren Branchenstandards."
     },
     {
       icon: "time" as const,
-      title: "Zeiterfassung",
-      description: "Erfassen Sie Arbeitszeiten projektbezogen und optimieren Sie Ihre Kalkulation."
+      title: "Kalkulation",
+      description: "Dachflächen, Material und Lohn in Minuten kalkulieren."
     },
     {
       icon: "maintenance" as const,
-      title: "Wartungsmodul",
-      description: "Digitale Wartungsplanung mit automatischen Erinnerungen und Terminvorlagen."
+      title: "Inspektion & Wartung",
+      description: "Digitale Inspektionspläne mit Erinnerungen und Checklisten."
     },
     {
       icon: "default" as const,
@@ -200,20 +200,20 @@ export default function Home() {
     {
       id: "mobile",
       title: "Mobile Apps",
-      description: "Zeiterfassung für unterwegs",
+      description: "Baustellendoku für unterwegs",
       icon: "mobile" as const,
       badge: "Praktisch"
     },
     {
       id: "integration",
       title: "Schnittstellen",
-      description: "DATEV, DATANORM & mehr",
+      description: "DATEV, GAEB, STLB-Bau",
       icon: "integration" as const,
       badge: "Wichtig"
     },
     {
       id: "wartung",
-      title: "Wartung",
+      title: "Inspektion",
       description: "Digitale Serviceplanung",
       icon: "maintenance" as const,
       badge: "Neu"
@@ -230,7 +230,7 @@ export default function Home() {
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
             <h2 className="text-3xl font-bold text-center mb-12" data-testid="text-featured-title">
-              Führende SHK-Softwarelösungen
+              Führende Dachdecker-Softwarelösungen
             </h2>
             
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -247,7 +247,7 @@ export default function Home() {
           categories={visualCategories}
         />
 
-        <IllustratedFeatureGrid title="Funktionen moderner SHK-Software" features={features} />
+        <IllustratedFeatureGrid title="Funktionen moderner Dachdecker-Software" features={features} />
 
         <section className="py-16 bg-background">
           <div className="container mx-auto max-w-7xl px-4">
@@ -271,8 +271,8 @@ export default function Home() {
         <FAQSection items={[...faqData]} />
 
         <CTASection
-          title="Finden Sie die perfekte SHK-Software"
-          description="Vergleichen Sie jetzt kostenlos über 50 Softwarelösungen und finden Sie die beste Lösung für Ihren Betrieb."
+          title="Finden Sie die perfekte Dachdecker-Software"
+          description="Vergleichen Sie jetzt kostenlos Softwarelösungen und finden Sie die beste Lösung für Ihren Betrieb."
         />
       </main>
 

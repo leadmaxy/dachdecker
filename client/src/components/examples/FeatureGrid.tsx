@@ -11,17 +11,17 @@ export default function FeatureGridExample() {
     {
       icon: Smartphone,
       title: "Mobile App",
-      description: "Zeiterfassung und Auftragsabwicklung direkt vom Smartphone, auch offline nutzbar."
+      description: "Zeiterfassung und Baustellendoku direkt vom Smartphone, auch offline nutzbar."
     },
     {
       icon: Settings,
       title: "Schnittstellen",
-      description: "Integration mit DATEV, DATANORM und weiteren branchenüblichen Systemen."
+      description: "Integration mit DATEV, GAEB, STLB-Bau und weiteren Branchenstandards."
     },
     {
       icon: Clock,
-      title: "Zeiterfassung",
-      description: "Erfassen Sie Arbeitszeiten projektbezogen und optimieren Sie Ihre Kalkulation."
+      title: "Kalkulation",
+      description: "Dachflächen, Material und Lohn in Minuten kalkulieren."
     },
     {
       icon: Database,
@@ -37,7 +37,7 @@ export default function FeatureGridExample() {
 
   return (
     <FeatureGrid
-      title="Funktionen moderner SHK-Software"
+      title="Funktionen moderner Dachdecker-Software"
       features={mockFeatures}
     />
   );

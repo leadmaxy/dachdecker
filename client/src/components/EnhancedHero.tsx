@@ -7,9 +7,9 @@ import heroImage from "@assets/generated_images/Tradesman_with_digital_tools_49e
 
 export default function EnhancedHero() {
   const stats = [
-    { icon: CheckCircle2, label: "50+ Software-Lösungen" },
-    { icon: Shield, label: "DSGVO-konform" },
-    { icon: TrendingUp, label: "Unabhängig" },
+    { icon: CheckCircle2, label: "40+ Dachdecker-Lösungen" },
+    { icon: Shield, label: "DSGVO-konform & sicher" },
+    { icon: TrendingUp, label: "Branchenfokus Dach & Fassade" },
   ];
 
   return (
@@ -17,20 +17,20 @@ export default function EnhancedHero() {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
-            <Badge className="mb-6" variant="secondary" data-testid="badge-hero-year">
-              Aktualisiert 2025
+            <Badge className="mb-6 fade-up" variant="secondary" data-testid="badge-hero-year">
+              Marktcheck 2025
             </Badge>
             
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6" data-testid="text-hero-title">
-              Die beste Handwerkersoftware für Ihr Handwerksunternehmen
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 fade-up fade-up-delay-1" data-testid="text-hero-title">
+              Die beste Dachdecker-Software für Ihren Betrieb
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8" data-testid="text-hero-description">
-              Vergleichen Sie professionelle Softwarelösungen für Sanitär, Heizung und Klima. 
-              Mit Cloud, mobiler App und allen wichtigen Schnittstellen.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 fade-up fade-up-delay-2" data-testid="text-hero-description">
+              Vergleichen Sie Lösungen für Dach, Fassade und PV. Mit digitalem Aufmaß,
+              Baustellendoku, Kalkulation und mobilen Apps für Ihre Teams.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 fade-up fade-up-delay-3">
               <Button asChild size="lg" data-testid="button-hero-compare">
                 <Link href={routes.vergleich}>
                   Software vergleichen
@@ -38,12 +38,12 @@ export default function EnhancedHero() {
               </Button>
               <Button asChild size="lg" variant="outline" data-testid="button-hero-consult">
                 <Link href={routes.kontakt}>
-                  Kostenlos beraten lassen
+                  Kostenlose Beratung
                 </Link>
               </Button>
             </div>
 
-            <div className="flex flex-wrap gap-6 md:gap-8">
+            <div className="flex flex-wrap gap-6 md:gap-8 fade-up fade-up-delay-3">
               {stats.map((stat, index) => (
                 <div
                   key={index}
@@ -61,7 +61,7 @@ export default function EnhancedHero() {
             <div className="relative rounded-lg overflow-hidden">
               <img 
                 src={heroImage} 
-                alt="Professioneller Handwerker nutzt digitale SHK-Software"
+                alt="Dachdeckerbetrieb nutzt digitale Software für Aufmaß und Baustelle"
                 className="w-full h-auto rounded-lg"
                 data-testid="img-hero"
               />
