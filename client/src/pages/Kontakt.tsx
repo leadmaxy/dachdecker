@@ -155,20 +155,28 @@ export default function Kontakt() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <form className="space-y-6">
+                    <form
+                      className="space-y-6"
+                      action="https://formspree.io/f/mzddyoal"
+                      method="POST"
+                    >
+                      <input type="hidden" name="_subject" value="Neue Anfrage: Dachdecker-Software" />
+                      <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
                       <div className="grid gap-4 md:grid-cols-2">
                         <div className="space-y-2">
                           <Label htmlFor="vorname">Vorname *</Label>
-                          <Input 
+                          <Input
                             id="vorname" 
+                            name="vorname"
                             placeholder="Max"
                             data-testid="input-vorname"
                           />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="nachname">Nachname *</Label>
-                          <Input 
+                          <Input
                             id="nachname" 
+                            name="nachname"
                             placeholder="Mustermann"
                             data-testid="input-nachname"
                           />
@@ -177,8 +185,9 @@ export default function Kontakt() {
 
                       <div className="space-y-2">
                         <Label htmlFor="firma">Firma</Label>
-                        <Input 
+                        <Input
                           id="firma" 
+                          name="firma"
                           placeholder="Mustermann Dach GmbH"
                           data-testid="input-firma"
                         />
@@ -186,9 +195,10 @@ export default function Kontakt() {
 
                       <div className="space-y-2">
                         <Label htmlFor="email">E-Mail *</Label>
-                        <Input 
+                        <Input
                           id="email" 
                           type="email"
+                          name="email"
                           placeholder="max@mustermann.de"
                           data-testid="input-email"
                         />
@@ -196,9 +206,10 @@ export default function Kontakt() {
 
                       <div className="space-y-2">
                         <Label htmlFor="telefon">Telefon</Label>
-                        <Input 
+                        <Input
                           id="telefon" 
                           type="tel"
+                          name="telefon"
                           placeholder="+49 123 456789"
                           data-testid="input-telefon"
                         />
@@ -206,8 +217,9 @@ export default function Kontakt() {
 
                       <div className="space-y-2">
                         <Label htmlFor="mitarbeiter">Anzahl Mitarbeiter</Label>
-                        <Input 
+                        <Input
                           id="mitarbeiter" 
+                          name="mitarbeiter"
                           placeholder="z.B. 5"
                           data-testid="input-mitarbeiter"
                         />
@@ -215,9 +227,10 @@ export default function Kontakt() {
 
                       <div className="space-y-2">
                         <Label htmlFor="nachricht">Ihre Nachricht *</Label>
-                        <Textarea 
+                        <Textarea
                           id="nachricht" 
                           rows={6}
+                          name="nachricht"
                           placeholder="Beschreiben Sie kurz, welche Software-Lösung Sie suchen oder welche Fragen Sie haben..."
                           data-testid="textarea-nachricht"
                         />

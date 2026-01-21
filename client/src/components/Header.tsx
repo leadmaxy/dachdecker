@@ -47,11 +47,12 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <Button
+              asChild
               size="sm"
               className="hidden md:inline-flex"
               data-testid="button-demo"
             >
-              Demo anfragen
+              <Link href="/kontakt">Demo anfragen</Link>
             </Button>
 
             <Button
@@ -84,8 +85,8 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <Button size="sm" className="w-full" data-testid="button-mobile-demo">
-                Demo anfragen
+              <Button asChild size="sm" className="w-full" data-testid="button-mobile-demo">
+                <Link href="/kontakt">Demo anfragen</Link>
               </Button>
             </div>
           </nav>
