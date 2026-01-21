@@ -22,7 +22,7 @@ export default function EnhancedHero() {
             </Badge>
             
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6" data-testid="text-hero-title">
-              Die beste SHK-Software für Ihr Handwerksunternehmen
+              Die beste Handwerkersoftware für Ihr Handwerksunternehmen
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8" data-testid="text-hero-description">
