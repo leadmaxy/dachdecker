@@ -19,14 +19,10 @@ export default function Impressum() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2 text-muted-foreground">
-                <p>Dachdecker-Software-Vergleich.de</p>
-                <p>Max Mustermann</p>
-                <p>Musterstraße 123</p>
-                <p>12345 Musterstadt</p>
+                <p>Leadmaxify GmbH</p>
+                <p>Rahel-Hirsch-Strasse 10</p>
+                <p>10557 Berlin</p>
                 <p>Deutschland</p>
-                <p className="text-xs text-muted-foreground/70 mt-4 pt-4 border-t">
-                  Hinweis: Dies sind Beispieldaten. Für produktiven Einsatz mit eigenen Firmendaten ersetzen.
-                </p>
               </div>
             </CardContent>
           </Card>
@@ -37,8 +33,7 @@ export default function Impressum() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2 text-muted-foreground">
-                <p>Telefon: +49 (0) 123 456789</p>
-                <p>E-Mail: info@dachdecker-software-vergleich.de</p>
+                <p>E-Mail: info@leadmaxy.com</p>
               </div>
             </CardContent>
           </Card>
@@ -50,59 +45,55 @@ export default function Impressum() {
             <CardContent>
               <p className="text-muted-foreground">
                 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE123456789 (Beispiel)
+                DE458718320
               </p>
             </CardContent>
           </Card>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Wirtschafts-ID</CardTitle>
+              <CardTitle>Handelsregister</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Wirtschafts-Identifikationsnummer gemäß § 139c Abgabenordnung:<br />
-                DE123456789012 (Beispiel)
+                HRB: HRB 279208 B<br />
+                Amtsgericht Charlottenburg
               </p>
             </CardContent>
           </Card>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Aufsichtsbehörde</CardTitle>
+              <CardTitle>Vertretung durch</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-muted-foreground">
-                <p>Handwerkskammer Musterstadt</p>
-                <p>Handwerkerstraße 1, 12345 Musterstadt</p>
-                <p className="mt-2">
-                  Berufsbezeichnung: Fachberater für Handwerkersoftware<br />
-                  Verliehen in: Deutschland
-                </p>
+                <p>Fazal-E Elahi</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Verbraucherstreitbeilegung</CardTitle>
+              <CardTitle>Inhaltlich Verantwortlicher gem. § 18 Abs. 2 MStV</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) 
-                bereit:<br />
-                <a 
-                  href="https://ec.europa.eu/consumers/odr/" 
-                  className="text-primary hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://ec.europa.eu/consumers/odr/
-                </a>
-              </p>
-              
+              <div className="space-y-2 text-muted-foreground">
+                <p>Fazal-E Elahi</p>
+                <p>Rahel-Hirsch-Strasse 10</p>
+                <p>10557 Berlin</p>
+                <p>Deutschland</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle>Verbraucher­streit­beilegung/Universal­schlichtungs­stelle</CardTitle>
+            </CardHeader>
+            <CardContent>
               <p className="text-muted-foreground">
-                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
                 Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </CardContent>
