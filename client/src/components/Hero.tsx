@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Shield, TrendingUp } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Hero() {
   const stats = [
@@ -30,8 +31,8 @@ export default function Hero() {
             <Button size="lg" data-testid="button-hero-compare">
               Software vergleichen
             </Button>
-            <Button size="lg" variant="outline" data-testid="button-hero-consult">
-              Kostenlose Beratung
+            <Button asChild size="lg" variant="outline" data-testid="button-hero-consult">
+              <Link href="/kontakt">Kostenlose Beratung</Link>
             </Button>
           </div>
 

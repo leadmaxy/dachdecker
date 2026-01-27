@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { 
   Cloud, 
   Smartphone, 
@@ -205,8 +206,8 @@ export default function Funktionen() {
               Ihren Anforderungen passt.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" data-testid="button-cta-consult">
-                Kostenlose Beratung anfragen
+              <Button asChild size="lg" data-testid="button-cta-consult">
+                <Link href="/kontakt">Kostenlose Beratung anfragen</Link>
               </Button>
               <Button size="lg" variant="outline" data-testid="button-cta-compare">
                 Software vergleichen

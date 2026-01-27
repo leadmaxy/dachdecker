@@ -115,8 +115,8 @@ export default function Vergleich() {
         <CTASection
           title="Noch unsicher? Wir beraten Sie kostenlos"
           description="Unsere Experten helfen Ihnen, die richtige Software für Ihre individuellen Anforderungen zu finden."
-          primaryButtonText="Kostenlose Beratung"
-          secondaryButtonText="Weitere Vergleiche ansehen"
+          primaryButtonText="Software vergleichen"
+          secondaryButtonText="Kostenlose Beratung"
         />
       </main>
 
