@@ -88,16 +88,11 @@ export default function Datenschutz() {
               </p>
               
               <p className="text-muted-foreground mb-4">
-                Dachdecker-Software-Vergleich.de<br />
-                Max Mustermann<br />
-                Musterstraße 123<br />
-                12345 Musterstadt<br />
-                Telefon: +49 (0) 123 456789<br />
-                E-Mail: info@dachdecker-software-vergleich.de
-              </p>
-              
-              <p className="text-xs text-muted-foreground/70 mb-4 pt-2 border-t">
-                Hinweis: Dies sind Beispieldaten. Für produktiven Einsatz mit eigenen Firmendaten ersetzen.
+                Leadmaxify GmbH<br />
+                Rahel-Hirsch-Strasse 10<br />
+                10557 Berlin<br />
+                Deutschland<br />
+                E-Mail: info@leadmaxy.com
               </p>
               
               <p className="text-muted-foreground mb-4">
